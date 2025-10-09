@@ -34,6 +34,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["C#", "WPF", "SQL", "NUnit"],
     repo: "https://github.com/xmikolay/PC-Parts-Picker-Project",
+    cover: "/og-image.png",
     highlights: [
       "Allows user selection of PC parts",
       "Checks compatibility between selected parts",
@@ -48,11 +49,26 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["Angular", "TypeScript", "REST API", "Bootstrap"],
     repo: "https://github.com/xmikolay/WOT-API-Project-2",
+    cover: "/og-image.png",
     highlights: [
       "Fetches and displays data from WOT public API",
       "Search and filter tanks, users and maps by various criteria",
       "Responsive UI with Bootstrap",
       "Client-side routing with Angular Router"
+    ],
+  },
+  {
+    id: "csgo-market",
+    title: "CS:GO Skin Marketplace",
+    tagline: "Web app simulating browsing and purchasing CS:GO skins.",
+    period: "2025",
+    tech: ["Angular", "TypeScript", "Bootstrap, AWS"],
+    repo: "",
+    cover: "/og-image.png",
+    highlights: [
+      "Fetches and displays skin data from S3 bucket and DynamoDB",
+      "Search and filter skins by various criteria",
+      "Responsive UI with Bootstrap"
     ],
   },
 ];
