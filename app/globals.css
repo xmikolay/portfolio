@@ -121,6 +121,6 @@
   }
 }
 
-html {scroll-behavior: smooth;}
+html {scroll-behavior: smooth; font-size: 18px;}
 
 [id] {scroll-margin-top: 5rem;}
