@@ -5,13 +5,13 @@ type SkillGroupProps = {
 
 export function SkillGroup({ title, items }: SkillGroupProps) {
   return (
-    <div>
-      <p className="font-semibold">{title}</p>
-      <div className="mt-1 flex flex-wrap gap-2">
+    <div className="space-y-2">
+      <p className="text-sm font-semibold">{title}</p>
+      <div className="flex flex-wrap gap-2">
         {items.map((item) => (
           <span
             key={item}
-            className="rounded-full border bg-muted px-3 py-1 text-xs"
+            className="rounded-full border bg-muted px-2.5 py-0.5 text-xs"
           >
             {item}
           </span>

@@ -8,7 +8,7 @@ export default function RootLayout({ children}: {children: React.ReactNode}){
       <body className="min-h-screen bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="container py-10">
+          <main className="relative mx-auto w-full max-w-5xl px-4 py-10">
             {children}
           </main>
         </ThemeProvider>
