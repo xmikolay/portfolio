@@ -19,7 +19,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["C#", "WPF", "MVVM", "APIs"],
     repo: "https://github.com/xmikolay/PersonalDashboard",
-    cover: "/og-image.png",
+    cover: "/placeholder.svg",
     highlights: [
       "MVVM architecture with commands/services",
       "ICS calendar import (read-only)",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["C#", "WPF", "SQL", "NUnit"],
     repo: "https://github.com/xmikolay/PC-Parts-Picker-Project",
-    cover: "/og-image.png",
+    cover: "/placeholder.svg",
     highlights: [
       "Allows user selection of PC parts",
       "Checks compatibility between selected parts",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["Angular", "TypeScript", "REST API", "Bootstrap"],
     repo: "https://github.com/xmikolay/WOT-API-Project-2",
-    cover: "/og-image.png",
+    cover: "/placeholder.svg",
     highlights: [
       "Fetches and displays data from WOT public API",
       "Search and filter tanks, users and maps by various criteria",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["Angular", "TypeScript", "Bootstrap, AWS"],
     repo: "",
-    cover: "/og-image.png",
+    cover: "/placeholder.svg",
     highlights: [
       "Fetches and displays skin data from S3 bucket and DynamoDB",
       "Search and filter skins by various criteria",
