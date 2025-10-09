@@ -14,7 +14,7 @@ export default function CvPage() {
         />
       </div>
 
-      <Link className="underline" href="/cv.pdf" download>
+      <Link className="underline" href="/cvupdated.pdf" download>
         Download PDF
       </Link>
     </div>
