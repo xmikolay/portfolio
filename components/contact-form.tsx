@@ -56,7 +56,7 @@ export function ContactForm() {
         rows={6}
         required
         className="w-full"
-      />
+      />  
 
       <Button type="submit" className="w-full h-11" disabled={status === "sending"}>
         {status === "sending" ? "Sending…" : "Send"}
