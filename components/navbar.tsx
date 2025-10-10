@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
-const SECTIONS = ["summary", "hobbies", "projects", "contact", "cv"];
+const SECTIONS = ["summary", "hobbies", "projects", "contact"];
 
 export function Navbar() {
   const [active, setActive] = useState<string>("summary");

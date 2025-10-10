@@ -172,21 +172,6 @@ export default function OnePage() {
           <ContactForm />
         </Paper>
       </Section>
-
-      {/* CV */}
-      <Section id="cv" title="CV">
-        <Paper>
-          <iframe
-            src="/cvupdated.pdf#zoom=page-width"
-            className="h-[75vh] w-full rounded-lg"
-          />
-          <div className="pt-3">
-            <Link href="/cvupdated.pdf" download className="underline">
-              Download PDF
-            </Link>
-          </div>
-        </Paper>
-      </Section>
     </div>
   );
 }
