@@ -9,19 +9,27 @@ import { projects } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
 import { SkillGroup } from "@/components/skill-group";
 import { ContactForm } from "@/components/contact-form";
+import { Hero } from "@/components/hero";
+import { Stats } from "fs";
+import { StatsRow } from "@/components/stats-row";
+import { Glass } from "@/components/glass";
 
 export default function OnePage() {
   return (
     <div className="relative">
-      {/* Soft accent glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 -top-20 mx-auto h-40 w-full max-w-3xl blur-3xl"
         style={{
           background:
-            "radial-gradient(50% 50% at 50% 50%, hsl(var(--primary)/0.18), transparent 65%)",
+            "radial-gradient(60% 60% at 50% 40%, hsl(var(--ring)/0.25), transparent 70%)",
         }}
       />
+
+      <Hero />
+      <div className="mt-6 mb-2">
+        <StatsRow />
+      </div>
 
       {/* SUMMARY */}
       <Section id="summary" title="A bit about me...">
@@ -93,7 +101,7 @@ export default function OnePage() {
               <p>
                 <strong>Chairperson of the college Motorsport Club.</strong>{" "}
                 Providing members with go-karting trips, game events, and car
-                meets—building a community around a{" "}
+                meets - building a community around a{" "}
                 <strong>shared passion</strong>.
               </p>
               <p>
@@ -108,7 +116,7 @@ export default function OnePage() {
             <h3 className="text-base font-medium">Tech &amp; Gaming</h3>
             <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
               <p>
-                Around tech since I was young—learning hardware and electronics
+                Around tech since I was young - learning hardware and electronics
                 from my dad. I&apos;ve <strong>built, serviced and repaired</strong> multiple PCs,
                 laptops and devices for myself and others.
               </p>
@@ -128,47 +136,39 @@ export default function OnePage() {
       </Section>
 
       {/* PROJECTS */}
+      
       <Section id="projects" title="Projects" description="Selected work with highlights.">
+        
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((p) => (
             <ProjectCard key={p.id} project={p} />
           ))}
         </div>
+        
       </Section>
+      
 
       {/* CONTACT */}
       <Section id="contact" title="Contact">
-        <Paper className="space-y-4">
+        <Paper className="space-y-5">
           <p className="text-base leading-relaxed text-muted-foreground">
             Best way to reach me is via LinkedIn or GitHub. You can also leave
             your email + message and I&apos;ll get back to you.
           </p>
+
           <div className="flex flex-wrap gap-3">
-            <Button
-              asChild
-              variant="outline"
-              className="inline-flex items-center gap-2"
-            >
-              <a
-                href="https://www.linkedin.com/in/mikolaj-makoszewski/"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <Button asChild variant="outline" className="h-9 rounded-full text-base ring-1 ring-border/40 hover:ring-border">
+              <a href="https://www.linkedin.com/in/mikolaj-makoszewski/" target="_blank" rel="noreferrer">
                 <Linkedin size={16} /> LinkedIn
               </a>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="inline-flex items-center gap-2"
-            >
+            <Button asChild variant="outline" className="h-9 rounded-full text-base ring-1 ring-border/40 hover:ring-border">
               <a href="https://github.com/xmikolay" target="_blank" rel="noreferrer">
                 <Github size={16} /> GitHub
               </a>
             </Button>
           </div>
 
-          {/* Minimal email form (wired to your /api/contact when you enable it) */}
           <ContactForm />
         </Paper>
       </Section>
