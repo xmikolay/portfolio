@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { Project } from "@/lib/projects";
 import { Button } from "@/components/ui/button";
+import { Glass } from "./glass";
 
 type Props = { project: Project };
 
@@ -48,7 +49,7 @@ export function ProjectCard({ project }: Props) {
 
       {/* Tagline */}
       {project.tagline && (
-        <p className="mt-1 text-sm text-muted-foreground">{project.tagline}</p>
+        <p className="mt-1 text-base md:text-lg leading-relaxed text-muted-foreground">{project.tagline}</p>
       )}
 
       {/* Highlights */}
