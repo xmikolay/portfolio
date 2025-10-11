@@ -13,13 +13,14 @@ import { Hero } from "@/components/hero";
 import { Stats } from "fs";
 import { StatsRow } from "@/components/stats-row";
 import { Glass } from "@/components/glass";
+import { BackToTop } from "@/components/back-to-top";
 
 export default function OnePage() {
   return (
     <div className="relative">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 -top-20 mx-auto h-40 w-full max-w-3xl blur-3xl"
+        className="pointer-events-none absolute inset-x-0 -top-20 mx-auto h-40 w-full max-w-3xl blur-3xl -z-10"
         style={{
           background:
             "radial-gradient(60% 60% at 50% 40%, hsl(var(--ring)/0.25), transparent 70%)",
@@ -35,7 +36,7 @@ export default function OnePage() {
       <Section id="summary" title="A bit about me...">
         <div className="space-y-6">
           <Paper>
-            <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
+            <div className="space-y-4 text-sm md:text-base leading-relaxed text-muted-foreground">
               <p>
                 Hi, my name is <strong>Mikolaj</strong>, and I&apos;m a 3rd year
                 BSc (Hons) Computing student focusing on{" "}
@@ -97,7 +98,7 @@ export default function OnePage() {
         <div className="grid gap-6 md:grid-cols-2">
           <Paper className="space-y-2">
             <h3 className="text-base font-medium">Motorsport &amp; Cars</h3>
-            <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+            <div className="space-y-3 text-sm md:text-base leading-relaxed text-muted-foreground">
               <p>
                 <strong>Chairperson of the college Motorsport Club.</strong>{" "}
                 Providing members with go-karting trips, game events, and car
@@ -114,7 +115,7 @@ export default function OnePage() {
 
           <Paper className="space-y-2">
             <h3 className="text-base font-medium">Tech &amp; Gaming</h3>
-            <div className="space-y-3 text-base leading-relaxed text-muted-foreground">
+            <div className="space-y-3 text-sm md:text-base leading-relaxed text-muted-foreground">
               <p>
                 Around tech since I was young - learning hardware and electronics
                 from my dad. I&apos;ve <strong>built, serviced and repaired</strong> multiple PCs,
@@ -150,8 +151,8 @@ export default function OnePage() {
 
       {/* CONTACT */}
       <Section id="contact" title="Contact">
-        <Paper className="space-y-5">
-          <p className="text-base leading-relaxed text-muted-foreground">
+        <Paper className="space-y-5 mb-25">
+          <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
             Best way to reach me is via LinkedIn or GitHub. You can also leave
             your email + message and I&apos;ll get back to you.
           </p>
@@ -172,6 +173,9 @@ export default function OnePage() {
           <ContactForm />
         </Paper>
       </Section>
+
+      <BackToTop />
+
     </div>
   );
 }

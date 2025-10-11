@@ -63,7 +63,7 @@ export function ContactForm() {
       </Button>
 
       {status === "sent" && (
-        <p className="text-sm text-green-600">Message sent ✅ I’ll get back to you soon.</p>
+        <p className="text-sm text-green-600">Message sent. I’ll get back to you soon.</p>
       )}
       {status === "error" && (
         <p className="text-sm text-red-600">Something went wrong. Please try again.</p>

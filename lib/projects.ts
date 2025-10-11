@@ -1,14 +1,13 @@
-// Simple project model + sample data (edit to your real projects)
 export type Project = {
   id: string;
   title: string;
   tagline: string;
-  period: string;        // e.g. "2025"
-  tech: string[];        // ["Next.js","Tailwind"]
-  repo?: string;         // GitHub URL
-  live?: string;         // Live demo URL
-  cover?: string;        // /images/...
-  highlights: string[];  // bullet points
+  period: string;       
+  tech: string[];       
+  repo?: string;         
+  live?: string;         
+  cover?: string;        
+  highlights: string[];  
 };
 
 export const projects: Project[] = [
@@ -19,7 +18,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["C#", "WPF", "MVVM", "APIs"],
     repo: "https://github.com/xmikolay/PersonalDashboard",
-    cover: "/placeholder.svg",
+    cover: "/dash.png",
     highlights: [
       "MVVM architecture with commands/services",
       "ICS calendar import (read-only)",
@@ -34,7 +33,7 @@ export const projects: Project[] = [
     period: "2025",
     tech: ["C#", "WPF", "SQL", "NUnit"],
     repo: "https://github.com/xmikolay/PC-Parts-Picker-Project",
-    cover: "/placeholder.svg",
+    cover: "/pcpart.png",
     highlights: [
       "Allows user selection of PC parts",
       "Checks compatibility between selected parts",
@@ -58,17 +57,18 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "csgo-market",
-    title: "CS:GO Skin Marketplace",
-    tagline: "Web app simulating browsing and purchasing CS:GO skins.",
+    id: "personal-portfolio",
+    title: "Personal Portfolio",
+    tagline: "Personal Portfolio website built on Next.js.",
     period: "2025",
-    tech: ["Angular", "TypeScript", "Bootstrap, AWS"],
-    repo: "",
-    cover: "/placeholder.svg",
+    tech: ["Next.js", "Tailwind", "Resend", "Netlify"],
+    repo: "https://github.com/xmikolay/portfolio",
+    cover: "/portfolio.png",
     highlights: [
-      "Fetches and displays skin data from S3 bucket and DynamoDB",
-      "Search and filter skins by various criteria",
-      "Responsive UI with Bootstrap"
+      "Shows off selected projects that I am most proud of.",
+      "Responsive, modern and sleek UI.",
+      "Working mailing service using resend (try it, I might reply :) ).",
+      "My favourite project so far."
     ],
   },
 ];
