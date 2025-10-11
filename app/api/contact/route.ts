@@ -21,6 +21,10 @@ export async function POST(req: Request) {
       );
     }
 
+    if (!message || message.length < 10 || message.length > 2000) {
+      return NextResponse.json({ ok: false, error: "Invalid length" }, { status: 400 });
+    }
+
     const resend = new Resend(process.env.RESEND_API_KEY);
     const to = process.env.CONTACT_TO;
     const from =
@@ -44,7 +48,7 @@ export async function POST(req: Request) {
       to,
       subject,
       text,
-      replyTo: email, // lets you click “Reply” straight to the sender
+      replyTo: email,
       tags: [{ name: "source", value: "portfolio" }],
     });
 
