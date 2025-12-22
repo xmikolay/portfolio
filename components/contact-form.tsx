@@ -8,24 +8,40 @@ export function ContactForm() {
   const [status, setStatus] =
     useState<"idle" | "sending" | "sent" | "error">("idle");
 
+  const [errorMessage, setErrorMessage] = useState<string>("");
+
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
 
     setStatus("sending");
+    setErrorMessage("");
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+
       if (res.ok) {
         setStatus("sent");
         form.reset();
       } else setStatus("error");
+
+      const errorData = await res.json();
+      if (errorData.error === "Invalid length") {
+          setErrorMessage("Message must be between 10 and 2000 characters.");
+        } else if (errorData.error === "Invalid input") {
+          setErrorMessage("Please provide a valid email and message.");
+        } else {
+          setErrorMessage("Something went wrong. Please try again.");
+        }
+      
     } catch {
       setStatus("error");
+      setErrorMessage("Something went wrong. Please try again.");
     }
   }
 
