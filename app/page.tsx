@@ -71,7 +71,7 @@ export default function OnePage() {
             />
             <SkillGroup
               title="Frameworks/Tools"
-              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js"]}
+              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "React"]}
             />
             <SkillGroup title="Cloud" items={["AWS", "Azure", "Firebase"]} />
             <SkillGroup
@@ -153,7 +153,7 @@ export default function OnePage() {
       <Section id="contact" title="Contact">
         <Paper className="space-y-5 mb-25">
           <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
-            Best way to reach me is via LinkedIn or GitHub. You can also leave
+            Best way to reach me is via LinkedIn. You can also leave
             your email + message and I&apos;ll get back to you.
           </p>
 
