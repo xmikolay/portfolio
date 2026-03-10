@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, GitBranch, Circle, CheckCircle2 } from "lucide-react";
 import { Project } from "@/lib/projects";
 import { Button } from "@/components/ui/button";
 import { Glass } from "./glass";
@@ -90,7 +90,9 @@ export function ProjectCard({ project }: Props) {
               rel="noreferrer"
               aria-label={`Open code for ${project.title}`}
             >
-              Code <ExternalLink className="ml-1 h-3.5 w-3.5" />
+              <GitBranch className="mr-1 h-3 w-3" />
+              Code 
+              <ExternalLink className="ml-1 h-3.5 w-3.5" />
             </a>
           </Button>
         )}
