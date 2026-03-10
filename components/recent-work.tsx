@@ -163,7 +163,6 @@ function SmallCard({ project }: { project: Project }) {
 
 export function RecentWork() {
   const featured = projects.find((p) => p.featured);
-  const rest = projects.filter((p) => !p.featured);
 
   return (
     <Section
@@ -172,25 +171,11 @@ export function RecentWork() {
       description="What I've been building lately."
     >
       <MotionConfig reducedMotion="user">
-        <div className="grid gap-6 md:grid-cols-2">
-          {featured && (
-            <Reveal>
-              <FeaturedCard project={featured} />
-            </Reveal>
-          )}
-
-          {rest.map((project, i) => (
-            <Reveal key={project.id}>
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.07, duration: 0.35, ease: "easeOut" }}
-              >
-                <SmallCard project={project} />
-              </motion.div>
-            </Reveal>
-          ))}
-        </div>
+        {featured && (
+          <Reveal>
+            <FeaturedCard project={featured} />
+          </Reveal>
+        )}
       </MotionConfig>
     </Section>
   );

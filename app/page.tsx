@@ -1,5 +1,6 @@
 "use client";
 
+
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import { Section } from "@/components/section";
@@ -14,6 +15,7 @@ import { Stats } from "fs";
 import { StatsRow } from "@/components/stats-row";
 import { Glass } from "@/components/glass";
 import { BackToTop } from "@/components/back-to-top";
+import { RecentWork } from "@/components/recent-work";
 
 export default function OnePage() {
   return (
@@ -135,6 +137,9 @@ export default function OnePage() {
           </Paper>
         </div>
       </Section>
+
+      {/* RECENT WORK */}
+      <RecentWork />
 
       {/* PROJECTS */}
       
