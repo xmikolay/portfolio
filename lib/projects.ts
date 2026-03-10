@@ -1,3 +1,5 @@
+export type Status = "Completed" | "In Progress";
+
 export type Project = {
   id: string;
   title: string;
@@ -7,10 +9,31 @@ export type Project = {
   repo?: string;         
   live?: string;         
   cover?: string;        
-  highlights: string[];  
+  highlights: string[];
+  featured?: boolean;
+  status: Status;
 };
 
 export const projects: Project[] = [
+  {
+    id: "esp32-hwmonitor",
+    title: "ESP32 Hardware Monitor",
+    tagline: "Lightweight Windows try app that sends real-time hardware monitoring data to an ESP32 microcontroller.",
+    period: "2026",
+    tech: ["C#", "LibreHardwareMonitor", "System.IO.Ports", "ESP32", "Arduino IDE"],
+    repo: "https://github.com/xmikolay/ESP32HardwareMonitor",
+    cover: "/esp32.jpg",
+    highlights: [
+      "CPU/GPU temperature, power, clock speed, usage, fan speed",
+      "RAM usage",
+      "Disk free space (C, D, E)",
+      "Network upload/download speed",
+      "Serial communication with ESP32",
+      "Runs as Windows system tray application"
+    ],
+    status: "In Progress",
+    featured: true,
+  },
   {
     id: "personal-dashboard",
     title: "Personal Dashboard (WPF)",
@@ -25,6 +48,7 @@ export const projects: Project[] = [
       "Material styling, CSV persistence",
       "Interactive To-Do list"
     ],
+    status: "Completed",
   },
   {
     id: "choose-part",
@@ -40,6 +64,7 @@ export const projects: Project[] = [
       "Uses SQL for data (parts) storage",
       "Unit tests with NUnit"
     ],
+    status: "Completed",
   },
   {
     id: "project-300",
@@ -54,6 +79,7 @@ export const projects: Project[] = [
       "Role: Front-end Developer.",
       "Developed the full-stack achievements and gamification system, implementing Supabase database schema, Express API endpoints, React/Next.js components, and automated badge evaluation logic that awards users for completing workouts and building streaks.",     
     ],
+    status: "In Progress",
   },
   {
     id: "personal-portfolio",
@@ -69,5 +95,6 @@ export const projects: Project[] = [
       "Working mailing service using resend (try it, I'll reply :) ).",
       "My favourite project so far."
     ],
+    status: "Completed",
   },
 ];
