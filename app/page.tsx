@@ -75,7 +75,7 @@ export default function OnePage() {
             />
             <SkillGroup
               title="Frameworks/Tools"
-              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "React, Express.js, Entity Framework Core, Jetpack Compose", "NUnit", "Vitest"]}
+              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "React", "Express.js", "Entity Framework Core", "Jetpack Compose", "NUnit", "Vitest"]}
             />
             <SkillGroup title="Cloud" items={["AWS", "Azure", "Firebase"]} />
             <SkillGroup
