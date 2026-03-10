@@ -1,6 +1,5 @@
 "use client";
 
-
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import { Section } from "@/components/section";
@@ -33,6 +32,9 @@ export default function OnePage() {
       <div className="mt-6 mb-2">
         <StatsRow />
       </div>
+
+      {/* RECENT WORK */}
+      <RecentWork />
 
       {/* SUMMARY */}
       <Section id="summary" title="A bit about me...">
@@ -73,12 +75,12 @@ export default function OnePage() {
             />
             <SkillGroup
               title="Frameworks/Tools"
-              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "React"]}
+              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "React, Express.js, Entity Framework Core, Jetpack Compose", "NUnit", "Vitest"]}
             />
             <SkillGroup title="Cloud" items={["AWS", "Azure", "Firebase"]} />
             <SkillGroup
               title="Databases"
-              items={["SQL Server", "DynamoDB", "Firebase", "Supabase"]}
+              items={["SQL Server", "DynamoDB", "Firebase", "Supabase", "MongoDB"]}
             />
             <SkillGroup
               title="Other"
@@ -89,6 +91,9 @@ export default function OnePage() {
                 "Visual Studio",
                 "VS Code",
                 "Android Studio",
+                "Rest APIs",
+                "Postman",
+                "npm / pnpm", 
               ]}
             />
           </Paper>
@@ -116,34 +121,26 @@ export default function OnePage() {
           </Paper>
 
           <Paper className="space-y-2">
-            <h3 className="text-base font-medium">Tech &amp; Gaming</h3>
+            <h3 className="text-base font-medium">Tech</h3>
             <div className="space-y-3 text-sm md:text-base leading-relaxed text-muted-foreground">
               <p>
-                Around tech since I was young - learning hardware and electronics
+                Around tech since I was young - gained knowledge of hardware and electronics
                 from my dad. I&apos;ve <strong>built, serviced and repaired</strong> multiple PCs,
                 laptops and devices for myself and others.
               </p>
               <p>
                 Recently switched to <strong>Linux (Fedora Workstation)</strong>{" "}
                 via dual-boot and enjoy tinkering to learn the differences vs.
-                other OSes.
-              </p>
-              <p>
-                I also enjoy long gaming sessions as a <strong>reward</strong>{" "}
-                after hard work—especially story-heavy FPS like Half-Life,
-                STALKER 2 and Fallout.
+                other OS'es.
               </p>
             </div>
           </Paper>
         </div>
       </Section>
 
-      {/* RECENT WORK */}
-      <RecentWork />
-
       {/* PROJECTS */}
       
-      <Section id="projects" title="Projects" description="Selected work with highlights.">
+      <Section id="projects" title="All Projects" description="Selected work with highlights.">
         
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((p) => (

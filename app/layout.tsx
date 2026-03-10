@@ -26,7 +26,7 @@ export default function RootLayout({ children}: {children: React.ReactNode}){
 
 export const metadata = {
   metadataBase: new URL("https://mikosweb.eu"),
-  title: "Mikolaj Makoszewski – Full-Stack Developer",
+  title: "Mikolaj Makoszewski – Computing Student & Developer",
   description:
     "Clean, well-documented web & desktop apps. Strong UI sense, readable code, and clean deployment.",
   alternates: { canonical: "/" },
