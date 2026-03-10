@@ -5,8 +5,8 @@ import { motion, MotionConfig } from "framer-motion";
 
 const items = [
   { k: "3rd", v: "Year CS Student" },
-  { k: "6+", v: "Shipped Projects" },
-  { k: "2", v: "Platforms (Web + Desktop)" },
+  { k: "6+", v: "Completed Projects" },
+  { k: "3", v: "Platforms" },
 ];
 
 export function StatsRow() {

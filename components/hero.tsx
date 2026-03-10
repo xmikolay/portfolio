@@ -44,7 +44,7 @@ export function Hero() {
                       Mikolaj Makoszewski
                     </h1>
                     <p className="mt-1 md:mt-2 text-xs sm:text-sm uppercase tracking-[0.15em] md:tracking-[0.2em] text-primary">
-                      Full-Stack Developer • C# / Next.js
+                      Computing Student & Developer • C# / Next.js
                     </p>
                   </div>
 
