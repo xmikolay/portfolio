@@ -42,19 +42,15 @@ export default function OnePage() {
           <Paper>
             <div className="space-y-4 text-sm md:text-base leading-relaxed text-muted-foreground">
               <p>
-                Hi, my name is <strong>Mikolaj</strong>, and I&apos;m a 3rd year
-                BSc (Hons) Computing student focusing on{" "}
-                <strong>full-stack web development</strong> and{" "}
-                <strong>desktop applications</strong>. I&apos;m passionate about
-                building clean, efficient software that solves real problems and
-                delivers great user experiences.
+                Hi, my name is <strong>Mikolaj</strong>, and I&apos;m a 4th year BSc (Hons) Computing student focused on{" "}
+                <strong>Software Engineering</strong>, {" "} <strong>Full-Stack Dev</strong> and {" "} <strong>tinkering with hardware</strong>. 
+                I&apos;m passionate about building clean, efficient software that solves real problems and delivers a great user experience.
               </p>
               <p>
                 I started coding in secondary school with Python and Micro:bit.
-                Since then I&apos;ve grown through{" "}
-                <strong>personal projects and coursework</strong>, working with
-                modern web frameworks like Next.js and Angular, and desktop
-                development with C# and WPF.
+                Since then I&apos;ve grown through{" "} <strong>personal projects, real-world experience and coursework</strong>, working with
+                modern web frameworks like Next.js and Angular, desktop development with C# and WPF and recently gaining experience 
+                with Java, Spring Boot and tools such as Datadog, Temporal and DBeaver.
               </p>
             </div>
           </Paper>
@@ -64,6 +60,7 @@ export default function OnePage() {
               title="Languages"
               items={[
                 "C#",
+                "Java",
                 "HTML",
                 "CSS",
                 "JavaScript",
@@ -71,16 +68,25 @@ export default function OnePage() {
                 "SQL",
                 "Kotlin",
                 "Python",
+                "Prolog",
               ]}
             />
             <SkillGroup
-              title="Frameworks/Tools"
-              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "React", "Express.js", "Entity Framework Core", "Jetpack Compose", "NUnit", "Vitest"]}
+              title="Frameworks & Libraries"
+              items={["WPF/XAML", "Angular", "Next.js", "ASP.NET Core", "Node.js", "Express.js", "Entity Framework Core", "Spring Boot", "Tailwind CSS"]}
+            />
+            <SkillGroup
+              title="Testing"
+              items={["NUnit", "Vitest", "Jest"]}
+            />
+            <SkillGroup
+              title="Tools & Platforms"
+              items={["Temporal", "Datadog", "DBeaver", "LaunchDarkly"]}
             />
             <SkillGroup title="Cloud" items={["AWS", "Azure", "Firebase"]} />
             <SkillGroup
               title="Databases"
-              items={["SQL Server", "DynamoDB", "Firebase", "Supabase", "MongoDB"]}
+              items={["SQL Server", "DynamoDB", "Supabase", "MongoDB", "SQLite", "PostgreSQL", "MySQL"]}
             />
             <SkillGroup
               title="Other"
@@ -88,12 +94,11 @@ export default function OnePage() {
                 "Git/GitHub",
                 "Linux",
                 "Docker",
-                "Visual Studio",
-                "VS Code",
                 "Android Studio",
-                "Rest APIs",
                 "Postman",
-                "npm / pnpm", 
+                "npm / pnpm",
+                "GitHub Actions",
+                "Jira",
               ]}
             />
           </Paper>
