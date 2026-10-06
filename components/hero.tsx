@@ -27,7 +27,7 @@ export function Hero() {
                 <div className="mx-auto md:mx-0">
                   <div className="relative h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 overflow-hidden rounded-2xl md:rounded-3xl ring-1 ring-border transition-transform duration-300 group-hover:scale-[1.015]">
                     <Image
-                      src="/avatar.jpg"
+                      src="/pic.jpg"
                       alt="Mikolaj"
                       fill
                       className="object-cover"
@@ -44,7 +44,7 @@ export function Hero() {
                       Mikolaj Makoszewski
                     </h1>
                     <p className="mt-1 md:mt-2 text-xs sm:text-sm uppercase tracking-[0.15em] md:tracking-[0.2em] text-primary">
-                      Computing Student & Developer • C# / Next.js
+                      Computing Student & Software Engineer • C# / Next.js
                     </p>
                   </div>
 
