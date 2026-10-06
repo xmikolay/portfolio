@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { ExternalLink, GitBranch, Circle, CheckCircle2 } from "lucide-react";
 import { motion, MotionConfig } from "framer-motion";
 import { Section } from "@/components/section";

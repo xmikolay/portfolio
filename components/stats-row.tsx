@@ -4,7 +4,7 @@ import { Glass } from "@/components/glass";
 import { motion, MotionConfig } from "framer-motion";
 
 const items = [
-  { k: "3rd", v: "Year CS Student" },
+  { k: "4th", v: "Year CS Student" },
   { k: "6+", v: "Completed Projects" },
   { k: "3", v: "Platforms" },
 ];

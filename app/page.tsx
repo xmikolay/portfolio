@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import { Section } from "@/components/section";
 import { Paper } from "@/components/paper";
@@ -10,9 +9,7 @@ import { ProjectCard } from "@/components/project-card";
 import { SkillGroup } from "@/components/skill-group";
 import { ContactForm } from "@/components/contact-form";
 import { Hero } from "@/components/hero";
-import { Stats } from "fs";
 import { StatsRow } from "@/components/stats-row";
-import { Glass } from "@/components/glass";
 import { BackToTop } from "@/components/back-to-top";
 import { RecentWork } from "@/components/recent-work";
 

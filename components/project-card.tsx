@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink, GitBranch, Circle, CheckCircle2 } from "lucide-react";
+import { ExternalLink, GitBranch } from "lucide-react";
 import { Project } from "@/lib/projects";
 import { Button } from "@/components/ui/button";
-import { Glass } from "./glass";
 
 type Props = { project: Project };
 
